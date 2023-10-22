@@ -11,7 +11,7 @@
 
 body {
     background-color: #000;
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     margin: 0 auto;
 
 }
@@ -38,6 +38,7 @@ header span {
 
 
 header .navegacao-primaria {
+    padding-top: 30px;
     display: flex;
     gap: 30px;
     align-items: center;
@@ -297,7 +298,7 @@ main .sobre {
     }
 
     .section-div {
-        background-image: url(img/pessoa\ ilustrativa.png);
+        background-image: url("imgs/Pati.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
