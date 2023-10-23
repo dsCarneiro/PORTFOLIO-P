@@ -377,6 +377,7 @@ main .sobre {
     gap: 30px;
     text-align: center;
     max-width: 300px;
+    min-width: 180px;
     align-content: center;
     height: 300px;
     background-color: #222;

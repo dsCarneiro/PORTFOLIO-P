@@ -83,6 +83,11 @@ const listaALL = document.querySelectorAll('.projects_armazenamento ul li');
 const buttonGeral = document.querySelectorAll('.project_navegacao li');
 const buttonALL = document.querySelector('.project_models .all');
 
+function ativaAll(){
+    buttonGeral[0].classList.add('ativo')
+}
+ativaAll()
+
 listaALL.forEach((item)=>{
     item.classList.add('ativo');
 })
@@ -102,7 +107,7 @@ buttonGeral.forEach((event,index)=>{
 
 function showLista(lista, buttom = "all"){
     lista.forEach((item)=>{
-        item.classList.remove('ativo');
+        item.classList.remove('ativo');        
     });
 
     if(buttom == 'design'){
@@ -133,26 +138,6 @@ function showLista(lista, buttom = "all"){
     }
 }
 
-// Get the button:
-let mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
 buttonGeral.forEach((item)=>{
     item.addEventListener('click', (e)=>{
         let currentButton = e.target;
@@ -176,3 +161,22 @@ buttonGeral.forEach((item)=>{
     });
 });
 
+// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
