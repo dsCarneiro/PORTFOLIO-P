@@ -11,9 +11,10 @@
 
 body {
     background-color: #000;
-    /*max-width: 1200px;*/
+    max-width: 2160px;
     margin: 0 auto;
-
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -588,6 +589,7 @@ main .sobre {
     padding: 40px;
     animation: sobeSecao .5s ease-in-out forwards;
 }
+
 
 
 /* SOBRE CURSOS E SKILLS */
